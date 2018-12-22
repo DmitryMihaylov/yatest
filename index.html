@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="media.css" >
+    <script src="app.js"></script>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <center>
+            <div id="bar">
+                <div class="links"><a href="#" onclick="generateTableFromVKO()">Отправление</a></div>
+                <div class="links"><a href="#" onclick="generateTableToVKO()">Прибытие</a></div>
+                <div class="links"><a href="#" onclick="addSelectBox()">Поиск рейсов</a></div>
+            </div>
+            <input name="searchText" placeholder="Номер рейса или его статус" type="text" maxlength="512" class="searchField" id="search" onkeypress="convertTable(event)"/>
+            <div id="select"></div>
+        </center>
+    </div>
+    <div class="container">
+        <div class="canvas">
+            <div id="table"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <center>
+        <a href="http://rasp.yandex.ru/" target="_blank" class="copyright copyright_type_horiz copyright_theme_yellow">
+            <img class="logo" src="https://yandex.st/rasp/media/apicc/logo_red.png">
+            <div class="arrow">Расписания</div>
+            <div class="copyright__data">Данные предоставлены сервисом Яндекс.Расписания</div>
+            <div class="copyright__link">rasp.yandex.ru</div>
+        </a>
+
+        </center>
+    </div>
+</div>
+</body>
+</html>
