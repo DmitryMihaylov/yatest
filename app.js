@@ -79,7 +79,7 @@ function generateTableToVKO()
     document.getElementById('table').innerHTML          = null
     const proxyurl = 'https://cors-anywhere.herokuapp.com/'
     const url = 'https://api.rasp.yandex.net/v3.0/search/?apikey=037f678d-e371-43e1-ab0f-6d6f51ee6936&format=json&from=LED&to=VKO&lang=ru_RU&page=1&date='+now+'&system=iata' // site that doesnt send Access-Control-*
-    fetch(proxyurl + url) // https://cors-anywhere.herokuapp.com/https://example.com
+    fetch(proxyurl + url)
         .then(response => response.text())
         .then(contents =>
         {
